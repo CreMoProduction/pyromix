@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Pyromix Documentation</title>
+    <link rel="stylesheet" href="//unpkg.com/docsify/themes/vue.css">
+    <style>
+      /* Remove .docsify-footer styling if present */
+      .docsify-basement {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        margin: 0;
+        padding: 1em 0;
+        background: #f5f5f5;
+        border-top: 1px solid #ddd;
+        text-align: center;
+        font-size: 0.95em;
+        z-index: 9999;
+      }
+      body {
+        padding-bottom: 3em; /* Prevent content overlap with basement */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script>
+      window.$docsify = {
+        name: 'Pyromix Documentation',
+        repo: '',
+        loadSidebar: true,
+        loadNavbar: true,
+        coverpage: true,
+        homepage: 'README.md',
+        search: {
+          placeholder: 'Type to search',
+          noData: 'No results!',
+          depth: 2
+        }
+      }
+      // Optional: dynamically update the browser tab title
+      document.addEventListener('DOMContentLoaded', function() {
+        document.title = 'Pyromix Documentation';
+      });
+
+      // Custom plugin to add a basement to each page
+      window.$docsify.plugins = [].concat((window.$docsify.plugins || []), function(hook) {
+        hook.afterEach(function(html) {
+          var basement = `
+            <div class="docsify-basement">
+              <strong>Basement:</strong> For more information, visit the <a href="https://github.com/Pyromix/Pyromix" target="_blank">Pyromix GitHub repository</a>.
+            </div>
+          `;
+          return html + basement;
+        });
+      });
+    </script>
+    <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+  </body>
+</html>
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+    <!-- Adds the breadcrumb JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/docsify-breadcrumb@latest/dist/index.min.js"></script>
+  </body>
+</html>
