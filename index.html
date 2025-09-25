@@ -2,25 +2,19 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Pyromix Documentation</title>
+    <title>Pyromix</title>
+    <link rel="icon" type="image/x-icon" href="images/pyromix_2_256.ico">
     <link rel="stylesheet" href="//unpkg.com/docsify/themes/vue.css">
     <style>
-      /* Remove .docsify-footer styling if present */
-      .docsify-basement {
-        position: fixed;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        margin: 0;
-        padding: 1em 0;
-        background: #f5f5f5;
-        border-top: 1px solid #ddd;
-        text-align: center;
-        font-size: 0.95em;
-        z-index: 9999;
-      }
-      body {
-        padding-bottom: 3em; /* Prevent content overlap with basement */
+      .sidebar .app-logo img,
+      .app-logo img,
+      .sidebar img[alt="logo"],
+      img[alt="Pyromix"] {
+        width: 48px !important;
+        height: auto !important;
+        max-width: 100% !important;
+        display: block;
+        margin: 0 auto;
       }
     </style>
   </head>
@@ -28,41 +22,46 @@
     <div id="app"></div>
     <script>
       window.$docsify = {
-        name: 'Pyromix Documentation',
+        name: 'Pyromix',
         repo: '',
+        //logo: 'images/pyromix_2_256.ico', // Use your custom logo file
+        themeColor: '#3F51B5',
         loadSidebar: true,
         loadNavbar: true,
-        coverpage: true,
+        coverpage: '_coverpage.md', // Use your custom cover page file
+        subMaxLevel: 4,
+        mathjax: true,
         homepage: 'README.md',
         search: {
           placeholder: 'Type to search',
           noData: 'No results!',
           depth: 2
-        }
+        },
+        plugins: [
+          function(hook, vm) {
+            hook.beforeEach(function(html) {
+              // Add footer at the bottom of each page as in the reference
+              return (
+                html +
+                '\n\n----\n\n' +
+                '<a href="https://docsify.js.org" target="_blank" style="color: inherit; font-weight: normal; text-decoration: none;">Powered by docsify. Alex Ilchenko</a>'
+              );
+            });
+          }
+        ]
       }
       // Optional: dynamically update the browser tab title
       document.addEventListener('DOMContentLoaded', function() {
-        document.title = 'Pyromix Documentation';
-      });
-
-      // Custom plugin to add a basement to each page
-      window.$docsify.plugins = [].concat((window.$docsify.plugins || []), function(hook) {
-        hook.afterEach(function(html) {
-          var basement = `
-            <div class="docsify-basement">
-              <strong>Basement:</strong> For more information, visit the <a href="https://github.com/Pyromix/Pyromix" target="_blank">Pyromix GitHub repository</a>.
-            </div>
-          `;
-          return html + basement;
-        });
+        document.title = 'Pyromix';
       });
     </script>
+    <script src="//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <script src="//cdn.jsdelivr.net/npm/docsify-latex@0"></script>
+
     <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
-  </body>
-</html>
-    <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
     <!-- Adds the breadcrumb JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/docsify-breadcrumb@latest/dist/index.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/docsify-breadcrumb@latest/dist/index.min.js"></script> -->
   </body>
 </html>

@@ -1,0 +1,7 @@
+# Local and Global Settings
+Pyromix manages its settings in two distinct ways to provide both flexibility and consistency: local settings and global settings.
+## Local Settings (Project-Specific)
+These settings are specific to the project you are currently working on. When you save a project, the settings you have configured—such as the parameters for baseline correction or deconvolution—are stored in a `settings.json` file within the project folder. This is a plain JSON file, so you can easily view or edit it manually using any text editor. This ensures that when you reopen a project, all your custom settings are loaded automatically, allowing you to pick up exactly where you left off.
+## Global Settings (Application-Wide)
+**Global settings** are application-wide and are stored in a config.json file. This file is located in the default software directory: `C:\Users\UserName\AppData\Local\Pyromix`. These settings apply to all new projects you create. They act as a default template, so you don't have to reconfigure every setting each time you start a new analysis. Like the project-specific settings, the config.json file is in a human-readable JSON format, allowing for manual editing if needed. 
+An example of a global setting is `"window_scale": 1.35`, which you can adjust if the graphical user interface elements appear too small on a high-resolution screen. Like the project-specific settings, the `config.json` file is in a human-readable JSON format, allowing for manual editing if needed.

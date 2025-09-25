@@ -1,0 +1,4 @@
+# Supported File Formats
+Pyromix is designed to work with a standardized and open file format to ensure compatibility across a wide range of analytical instruments and software packages. The program exclusively accepts `GC-MS AIA-standard netCDF files`.
+To be recognized by the software, these files must have the .cdf extension. It is also important that all your samples have the same mass range size and retention time length. While the software will prompt you to correct any inconsistencies upon import, it is highly recommended to ensure all your data files are uniform from the start for the most reliable and efficient processing. This adherence to an open standard and uniform data structure ensures a smooth and reliable data import process, minimizing errors and allowing you to focus on the analysis of your data.
+
