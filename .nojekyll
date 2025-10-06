@@ -1,0 +1,2 @@
+// This file prevents GitHub Pages from using Jekyll to build the site.
+// Required for Docsify and other static site generators that do not use Jekyll.
