@@ -11,7 +11,7 @@
 
 The **File explorer** tab is your primary tool for managing the raw data files in your project. It provides a simple, list-based view of all the files you have loaded, and allows you to select files for both plotting and processing.
 
-## How to Use
+## Usage
 
 The main panel of the file explorer displays a list of all the .`cdf` files in your project. The `Auto plot on select` option, located at the top of the window, allows you to automatically plot the selected file in the main **Data overview** tab. 
 

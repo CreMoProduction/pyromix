@@ -69,7 +69,7 @@ The right mouse click shows a context menu. Below there are some of the options.
 - **Copy to clipboard**: This function copies the selected peak data to the clipboard in a tabular format, which can then be pasted into a spreadsheet or another application for further analysis.
 - **Save to CSV**: This option allows you to export the selected peak data directly to a `.csv` file, providing a convenient way to store your results for later use.
 - **Send to NIST MS Search**: This is a powerful feature that sends the mass spectrum of the selected peak directly to the NIST MS Search program for in-depth analysis and identification. 
-- **Reload Library**: This option reloads the spectral library, which sometimes is useful if you have made changes to the library file while the software is running.
+- **Reload Library**: This option reloads the spectral library, which sometimes is useful if you have made changes to the library file while Pyromix is running.
 - **Library Info**: This option provides information about the currently loaded spectral library, such as the number of compounds it contains.
 
 > To be able to send it to NIST MS Search you need to specify executable software file. Please see the [Annotation](annotation.md) section on how to do it.

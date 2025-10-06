@@ -31,8 +31,8 @@
 ### Main.csv
 - `Main.csv`: This file contains the primary results of your analysis (Figure 1). 
 
-### Classification.csv
-- `Classification.csv`: This file provides a summary of the compound classifications (Figure 2).
+### Classification_class.csv & Classification_compound.csv
+- `Classification_class.csv` and `Classification_compound.csv`: These files provide a summary of the compound classifications (Figure 2).
 
 ### Mass Spectra.msp
-- `Mass Spectra.msp`: This option allows you to export deconvoluted mass spectra to a .msp file. This format is compatible with NIST Mass Spectral Libraries, enabling you to create your own custom libraries from the high-quality, pure compound spectra resolved by the software (Figure 3).
+- `Mass Spectra.msp`: This option allows you to export deconvoluted mass spectra to a .msp file. This format is compatible with NIST Mass Spectral Libraries, enabling you to create your own custom libraries from the high-quality, pure compound spectra resolved by Pyromix (Figure 3).

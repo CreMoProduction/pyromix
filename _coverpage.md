@@ -6,6 +6,7 @@
 </p>
 
 <span style="font-size:3.25em; font-family:'Segoe UI', SegoeUI, 'Segoe WP', Tahoma, Arial, sans-serif;"><strong>Pyromix</strong></span>
+
 >  A high-throughput Py-GC-MS processing tool for deconvolution and classification complex polymeric co-eluted compounds
 
 [Quick Start](/quick_start)

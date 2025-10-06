@@ -1,7 +1,7 @@
 # Deconvolution results tab
 The **Deconvolution Results** tab is where you can visually inspect and interact with the results of the deconvolution and annotation steps. It provides a detailed, side-by-side comparison of the raw data with the resolved compounds, giving you a clear picture of the algorithm's performance.
 
-## How to Use
+## Usage
 The main area is divided into two sections.
 
 ### Left Section: Visual Compound Overview
